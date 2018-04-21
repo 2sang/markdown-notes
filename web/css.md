@@ -1,10 +1,10 @@
-April 15th
+CSS tips
 ==========
 #### Display Property
 ```css 
 display: inline-block;
 ```
-Specifies how to display inner content. don't have any idea yet.    
+Initial value of property display is 'inline'. It gives its child elements 
 #### horizontal scrolling
 ```css 
 .horizontal-scroll-wrapper {
@@ -19,10 +19,8 @@ check out this [Link](http://css-tricks.com/pure-css-horizontal-scrolling)
 #### javascript node
 javascript nodes are unique. It cannot be copied dynamically by assigning multiple times.
 #### cloneNode()
-Painted nodes(such as 'canvas') are not cloned.
+Painted nodes(such as 'canvas'), and inner texts are not cloned. 
+If you need deep copy of the element, give "true" to first parameter.
 #### Vim replace
-```vimscript
-%s/foo/bar/gc
-```
-'c' at the end of command represents 'confirm'.
+
 

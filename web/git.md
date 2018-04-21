@@ -3,7 +3,7 @@
 
 #### Frequently used commands
 ```bash
-git merge target-branch
+git merge targetbranch
 ```
-Doing this command while you're on the base branch makes branch merging from target-branch to
-your branch.
+Doing this command while HEAD pointed at the base branch makes branch merging from target-branch to
+the branch where HEAD point at(current branch you're working on).
