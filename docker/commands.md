@@ -3,7 +3,7 @@ Docker commands and aliases explained
 Brief version of [docker official documentation](https://docs.docker.com/engine/reference/commandline/cli/)
 
 ### My aliases
-check out all aliases at [my docker alias sets](https://github.com/2sang/dotfiles/blob/master/.dockerrc)
+Check out example aliases at [My docker aliases](https://github.com/2sang/dotfiles/blob/master/.dockerrc)
 ```bash
 # Basic aliases
 da - docker attach
