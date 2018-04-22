@@ -1,5 +1,34 @@
 CSS tips
 ==========
+
+### Positioned Layout - [Link](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning)
+Most tricky part of CSS.
+
+#### 'float' property - [Link](https://developer.mozilla.org/en-US/docs/Web/CSS/float)
+Specifies that an element should be placed along the **left or right side** of its container,
+allowing text and inline elements to wrap around it.
+```css
+float: none;
+float: left;
+float: right;
+```
+
+#### 'position' property - [Link](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+default: static
+```css
+position: static;
+position: relative;
+position: absolute;
+```
+
+
+
+### Others
+#### Calculating size of elements - "box-sizing"
+box-sizing: How browser calculates the total width and height.
+```css
+box-sizing: content-box; /*default*/
+```
 #### Display Property
 ```css 
 display: inline-block;
@@ -16,11 +45,4 @@ Initial value of property display is 'inline'. It gives its child elements
 ```
 Another solution is, rotate the whole container to counter, or clockwise.
 check out this [Link](http://css-tricks.com/pure-css-horizontal-scrolling)
-#### javascript node
-javascript nodes are unique. It cannot be copied dynamically by assigning multiple times.
-#### cloneNode()
-Painted nodes(such as 'canvas'), and inner texts are not cloned. 
-If you need deep copy of the element, give "true" to first parameter.
-#### Vim replace
-
 

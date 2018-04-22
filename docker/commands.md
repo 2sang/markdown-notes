@@ -1,9 +1,8 @@
 Docker commands and aliases explained
 ======================================
-Brief version of [docker official documentation](https://docs.docker.com/engine/reference/commandline/cli/)
+Personal, brief version of [docker official documentation](https://docs.docker.com/engine/reference/commandline/cli/)
 
-Commands
---------
+### Commands
 
 **Dive into a bash shell** of currently running container:
 ```bash
@@ -18,11 +17,19 @@ Note that the changes of container do not overwrite existing image by default.
 docker commit [OPTIONS] container [repository:tag]
 ```
 
-**Fetch files** from container to local filesystem, or vise versa
+**Fetch files** from container to local filesystem, or vise versa:
 ```bash
+# Container to local
 docker cp [OPTIONS] container:src_path dest_path
+# Local to container
 docker cp [OPTIONS] src_path container:dest_path
 ```
+
+**Detach from running container** without stopping it:
+```bash
+<Ctrl+p> <Ctrl+q>
+```
+
 
 
 
@@ -42,8 +49,3 @@ dip - docker inspect --format '{{ .NetworkSettings.IPAddress }}'
 di - docker images
 ```
 
-
-
-
-
-How to commit 
