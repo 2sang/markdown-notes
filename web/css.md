@@ -1,10 +1,10 @@
 CSS tips
 ==========
 
-### Positioned Layout - [Link](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning)
+### Positioned Layout - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning)
 Most tricky part of CSS.
 
-#### 'float' property - [Link](https://developer.mozilla.org/en-US/docs/Web/CSS/float)
+#### 'float' property - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/float)
 Specifies that an element should be placed along the **left or right side** of its container,
 allowing text and inline elements to wrap around it.
 ```css
@@ -13,7 +13,7 @@ float: left;
 float: right;
 ```
 
-#### 'position' property - [Link](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+#### 'position' property - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
 default: static
 ```css
 position: static;
@@ -45,4 +45,59 @@ Initial value of property display is 'inline'. It gives its child elements
 ```
 Another solution is, rotate the whole container to counter, or clockwise.
 check out this [Link](http://css-tricks.com/pure-css-horizontal-scrolling)
+
+#### Make innerText vertically centered? - [StackOverflow](https://stackoverflow.com/questions/9249359/is-it-possible-to-vertically-align-text-within-a-div)
+```css 
+#column-content {
+  display: inline-block;
+}
+img {
+  vertical-align: middle;
+}
+span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* for visual purposes */
+#column-content {
+  border: 1px solid red;
+  position: relative;
+}
+```
+
+#### Make two divs are placed next to each other - [StackOverflow](https://stackoverflow.com/questions/5803023/how-to-place-two-divs-next-to-each-other)
+```css
+#wrapper {
+    width: 500px;
+    border: 1px solid black;
+    overflow: hidden; /* will contain if #first is longer than #second */
+}
+#first {
+    width: 300px;
+    float:left; /* add this */
+    border: 1px solid red;
+}
+#second {
+    border: 1px solid green;
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+}
+
+/* or */ 
+
+#wrapper {
+    width: 500px;
+    border: 1px solid black;
+    overflow: hidden; /* add this to contain floated children */
+}
+#first {
+    width: 300px;
+    float:left; /* add this */
+    border: 1px solid red;
+}
+#second {
+    border: 1px solid green;
+    float: left; /* add this */
+}
+```
 
