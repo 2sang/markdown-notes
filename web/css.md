@@ -1,6 +1,8 @@
 CSS tips
 ==========
 
+### Basic Selector - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+
 ### Positioned Layout - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning)
 Most tricky part of CSS.
 
@@ -100,4 +102,29 @@ span {
     float: left; /* add this */
 }
 ```
+
+#### Use '&&, ||' operator - [StackOverflow](https://stackoverflow.com/questions/2797091/css-and-and-or),
+```css
+<div class="class1 class2"></div>
+
+/*This works as AND */
+div.class1.class2
+{
+  /* foo */
+}
+
+<div class="class1"></div>
+<div class="class2"></div>
+
+/*And this works as OR */
+div.class1,
+div.class2
+{
+  /* foo */
+}
+
+```
+
+
+
 
