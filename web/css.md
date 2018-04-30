@@ -23,8 +23,6 @@ position: relative;
 position: absolute;
 ```
 
-
-
 ### Others
 #### Calculating size of elements - "box-sizing"
 box-sizing: How browser calculates the total width and height.
@@ -122,8 +120,10 @@ div.class2
 {
   /* foo */
 }
-
 ```
+
+#### Blur effect - [Codepen](https://codepen.io/anthonyadamski/pen/yJBpd)
+
 
 
 
