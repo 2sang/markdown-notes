@@ -34,7 +34,7 @@ function myFunc(evt)
 }
 ```
 
-
-
-
+#### What is the difference between HTML properties and HTML attributes? - [StackOverflow](https://stackoverflow.com/questions/6003819/what-is-the-difference-between-properties-and-attributes-in-html)
+When writing HTML source code, you can define attributes on your HTML elements. Then, once the browser  
+parses your code, a corresponding DOM node will be created. This node is an object, and therefore it has properties.
 
