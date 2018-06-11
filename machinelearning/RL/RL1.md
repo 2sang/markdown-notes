@@ -2,8 +2,8 @@
 
 #### Introduction
 
-Same problem -> decision making. across many field. optimal way to make decision.
-Many different fields.
+Same problem -> decision making. across many field. optimal way to make decision.  
+There are **many different similar fields.**
 
 What makes RL different from other ML paradigms?
 
@@ -15,8 +15,13 @@ What makes RL different from other ML paradigms?
 
 Optimize sequence of decisions!
 
-RL is based on **reward hypothesys**
-Reward: is a scalar feedback signal.
+RL is based on **Reward Hypothesys**. which is a scalar feedback signal.  
+Example of rewards:
+
+-   Fly stunt manoeuvres in a helicopter
+    -   +reward for following desired trajectory
+    -   -reward for crashing
+
 At each step t, the agent:
 
 -   Executes action At
@@ -29,12 +34,20 @@ The environment:
 -   Emits observation Ot
 -   Emits scalar reward Rt
 
+![image](images/brain_and_earth.png 'title')  
+**But exactly what moment is t changes?** which one goes first?
+
+#### History and State
+
+The **History** is the sequence of observations, actions, rewards
 Ht = A1, O1, R1, A2, O2, R2 ... At, Ot, Rt
 What happens next is depends on the history:
 
 -   The agent selects actions
 -   The environment selects observations/rewards
 
+Instead of looking back all the history about what was happend every time,  
+we see the 'state' of agent.  
 State is the information used to determine what happens next
 
 Formally, state is a function of the history:
@@ -44,14 +57,22 @@ The environment state St^e is the environment's private representation.
 The agent state St^a is the agent's internal representation.
 Like these definitions, we can think of the RL as mutual interaction between the Agent and the Environment.
 
-#### information state
+#### Information state
 
 An information state(a.k.a Markov state) contains all useful information from the history
 "The future is independent of the past given the present"
 In other word, you only need to store state.
 
--   Once the state is known, the history may be thrown away
--   The state is a sufficient indicator of the future
+-   Once the current state is known, the history may be thrown away
+-   Current state is a sufficient indicator of the future
+
+#### Rat Example
+
+So we got the concept that current state is enough to represent what happened before.
+BUT, current state does not necessarily mean it should be static, in other words, Agent can
+define the state as last 3 items in sequence, or complete sequence. If it decided to define
+the state to complete sequence, then it can contain history.
+It is our job to define state that is useful for inteligent agent system.
 
 #### Full observability: agent **directly** observes environment state, that is, Ot = St^a, St^e
 
