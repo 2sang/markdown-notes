@@ -2,6 +2,19 @@
 
 #### Introduction
 
+Same problem -> decision making. across many field. optimal way to make decision.
+Many different fields.
+
+What makes RL different from other ML paradigms?
+
+-   there is no supervisor, only a reward signal
+-   Feedback is delayed, not instantaneous  
+    maybe many steps later, you'll actually see that decision was bad or good.
+-   Time really matters (sequential, non.i.i.d data)
+    Specifically, RL is different from the fact that it changes Environment.
+
+Optimize sequence of decisions!
+
 RL is based on **reward hypothesys**
 Reward: is a scalar feedback signal.
 At each step t, the agent:
