@@ -68,13 +68,13 @@ In other word, you only need to store state.
 
 #### Rat Example
 
-So we got the concept that current state is enough to represent what happened before.
-BUT, current state does not necessarily mean it should be static, in other words, Agent can
-define the state as last 3 items in sequence, or complete sequence. If it decided to define
-the state to complete sequence, then it can contain history.
+So we got the concept that current state is enough to represent what happened before.  
+However, current state does not necessarily mean it should be static. In other words, we can
+define the state as last 3 items in sequence, or complete sequence. If we decided to define
+the state to complete sequence, then the state can contain 'past' what we call history.
 It is our job to define state that is useful for inteligent agent system.
 
-#### Full observability: agent **directly** observes environment state, that is, Ot = St^a, St^e
+#### Full observability: agent **directly** observes environment state, that is, Ot = St^a = St^e
 
 #### Partial observability:
 
@@ -84,17 +84,19 @@ It is our job to define state that is useful for inteligent agent system.
 -   Now agent state != environment state
 -   Agent must construct its own state representation St^a, e.g.  
     Complete history: St^a = Ht  
-    Belief of environment state St^a = (P[St^e = S^1], ..P[St^e = Sn])
+    **Belief**(probability) of environment state St^a = (P[St^e = S^1], ..P[St^e = Sn])
 
 ### Inside of RL Agent
 
 RL agent may include one or more of these components:
 
--   Policy: how agent picks actions.
--   Value function: how good is each state.
+-   Policy: how agent picks actions from its state.
+-   Value function: measures how good is each state or/and how good is each action.
 -   Model: agent's representation of the environment.
 
 #### Policy
+
+This is what we really care about. We want to learn this thing from experience.
 
 -   A **map** from state to action
 -   Deterministic policy: a = pi(s)
@@ -105,6 +107,9 @@ RL agent may include one or more of these components:
 -   A **prediction of expected future reward**
 -   used to evaluate the goodness/badness of states
 -   And therefore to select between actions.
+-   Important: If you take a look at the fomula, you can notice **pi** is indexed  
+    Because policy decides action among various options. so it goes like,
+    How much total award is **Expected** to get in the future.
 
 #### Model
 
