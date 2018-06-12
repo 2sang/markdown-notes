@@ -16,3 +16,5 @@ Bellman Equation:
 -   Consists of expected return(Gt), conditioned on state s
 -   Return is, sum of reward we get in the future.
 -   Basically, it decomposes the value function into **immediate reward Rt+1** and **value of next state**
+
+#### A
